@@ -44,7 +44,7 @@ const Repositories = () => {
           <div className="md:w-1/4">
             <div className="space-y-4">
               <img
-                src="public/3b7943db-d54a-45aa-9164-21c2c0ff2bb7.JPG"
+                src="3b7943db-d54a-45aa-9164-21c2c0ff2bb7.JPG"
                 alt="Profile"
                 className="w-full max-w-[296px] rounded-full border border-github-border"
               />
