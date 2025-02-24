@@ -35,7 +35,7 @@ const Resume = () => {
       {
         role: "Frontend Developer",
         company: "Grey-Box",
-        period: "June 2024 - Aug 2024",
+        period: "July 2023 - Sept 2023",
         description: "Developed and optimized responsive web applications, ensuring high performance, accessibility, and an exceptional user experience.",
         highlights: ["Engineered dynamic user interfaces using React, Next.js, and TypeScript to deliver an intuitive experience.",
         "Implemented responsive design principles and optimized web performance for fast load times and accessibility.",
