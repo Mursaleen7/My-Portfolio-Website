@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Link } from "react-router-dom";
 import { Search, Book, Star, GitFork, ChevronDown, Users, MapPin, LinkIcon, Twitter, Building, Heart, Linkedin, Github } from "lucide-react";
 
@@ -24,7 +24,6 @@ const Repositories = () => {
       updated: "Updated 5 days ago",
       url: "https://github.com/Mursaleen7/Portfolio-Website"
     },
-
     {
       name: "Email Fraud Detection",
       description: "Detects whether the email is malicious and gives a fraud score",
@@ -35,9 +34,6 @@ const Repositories = () => {
       updated: "Updated 5 days ago",
       url: "https://github.com/Mursaleen7/Portfolio-Website"
     }
-
-    
-      
   ];
 
   return (
@@ -48,22 +44,22 @@ const Repositories = () => {
           <div className="md:w-1/4">
             <div className="space-y-4">
               <img
-                src="/3b7943db-d54a-45aa-9164-21c2c0ff2bb7.JPG"
+                src="public/3b7943db-d54a-45aa-9164-21c2c0ff2bb7.JPG"
                 alt="Profile"
                 className="w-full max-w-[296px] rounded-full border border-github-border"
               />
-              <h1 className="text-[26px] font-semibold leading-[1.25]">Mursaleen Sakoskar</h1>
-              <p className="text-[20px] font-light leading-6 text-github-text-secondary">Mursaleen7&nbsp;&nbsp;&nbsp;he/him</p>
-              <button className="w-full py-1 px-3 text-sm font-semibold bg-github-button-bg text-github-button-text border border-github-border rounded-md hover:bg-github-button-hover transition-colors">
+              <h1 className="text-[26px] font-semibold leading-[1.25] animate-fade-in">Mursaleen Sakoskar</h1>
+              <p className="text-[20px] font-light leading-6 text-github-text-secondary animate-fade-in">Mursaleen7&nbsp;&nbsp;&nbsp;he/him</p>
+              <button className="w-full py-1 px-3 text-sm font-semibold bg-github-button-bg text-github-button-text border border-github-border rounded-md hover:bg-github-button-hover transition-colors animate-fade-in">
                 Edit profile
               </button>
-              <div className="flex items-center space-x-2 text-sm text-github-text-secondary">
+              <div className="flex items-center space-x-2 text-sm text-github-text-secondary animate-fade-in">
                 <Users className="w-4 h-4" />
                 <span>203 followers</span>
                 <span>·</span>
                 <span>336 following</span>
               </div>
-              <div className="space-y-2 text-sm">
+              <div className="space-y-2 text-sm animate-fade-in">
                 <div className="flex items-center space-x-2">
                   <Building className="w-4 h-4 text-github-text-secondary" />
                   <span>Carleton University</span>
@@ -90,7 +86,7 @@ const Repositories = () => {
 
           {/* Main Content */}
           <main className="md:w-3/4">
-            <h2 className="text-2xl font-semibold mb-6">Repositories</h2>
+            <h2 className="text-2xl font-semibold mb-6 animate-fade-in">Repositories</h2>
             <div className="mb-6 flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-4 sm:space-y-0">
               <div className="relative flex-grow sm:max-w-[440px]">
                 <input
