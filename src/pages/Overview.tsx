@@ -73,77 +73,81 @@ const Overview = () => {
             </div>
 
             {/* Popular Repositories */}
-            <div className="space-y-4">
-              <h3 className="text-base font-semibold animate-fade-in">Popular repositories</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {[
-                  {
-                    title: "Plant Health AI",
-                    name: "awesome-project",
-                    description:
-                      "An AI-driven solution that detects plant diseases, providing actionable insights to help farmers and gardeners keep their crops healthy.",
-                    language: "Python",
-                    stars: 56,
-                    forks: 12,
-                    status: "Public",
-                  },
-                  {
-                    title: "Email Fraud Detection",
-                    name: "email-fraud-detection",
-                    description:
-                      "A robust system that scans your emails to identify fraudulent messages and phishing attempts, ensuring secure communication.",
-                    language: "JavaScript",
-                    stars: 45,
-                    forks: 7,
-                    status: "Public",
-                  },
-                  {
-                    title: "Computer Use (Public Beta)",
-                    name: "computer-use-beta",
-                    description:
-                      "A groundbreaking feature enabling AI to control a computer's desktop environment. It mimics human interactions by moving the cursor, clicking buttons, typing text, and operating web browsers to automate tasks like form filling, booking trips, and planning events.",
-                    language: "JavaScript",
-                    stars: 38,
-                    forks: 5,
-                    status: "Public Beta",
-                  },
-                ].map((project, index) => (
-                  <div
-                    key={index}
-                    className="p-4 border border-github-border rounded-md hover:border-github-hover transition-colors animate-fade-in"
-                  >
-                    <div className="flex items-center justify-between mb-2">
-                      <Link
-                        to={`/repositories/${project.name}`}
-                        className="text-github-accent font-semibold hover:underline"
-                      >
-                        {project.title}
-                      </Link>
-                      <span className="text-xs text-github-text-secondary border border-github-border rounded-full px-2 py-0.5">
-                        {project.status}
-                      </span>
-                    </div>
-                    <p className="text-sm text-github-text-secondary mb-4">
-                      {project.description}
-                    </p>
-                    <div className="flex items-center space-x-4 text-xs text-github-text-secondary">
-                      <div className="flex items-center">
-                        <div className="w-3 h-3 rounded-full bg-yellow-400 mr-2"></div>
-                        {project.language}
-                      </div>
-                      <div className="flex items-center">
-                        <Star className="w-4 h-4 mr-1" />
-                        {project.stars}
-                      </div>
-                      <div className="flex items-center">
-                        <GitFork className="w-4 h-4 mr-1" />
-                        {project.forks}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+<div className="space-y-4">
+  <h3 className="text-base font-semibold animate-fade-in">Popular repositories</h3>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {[
+      {
+        title: "Plant Health AI",
+        name: "awesome-project",
+        description:
+          "An AI-driven solution that detects plant diseases, providing actionable insights to help farmers and gardeners keep their crops healthy.",
+        language: "Python",
+        stars: 56,
+        forks: 12,
+        status: "Public",
+        githubUrl: "https://github.com/Mursaleen7/Plant-Disease-Detection-Website", // Add the GitHub URL
+      },
+      {
+        title: "Email Fraud Detection",
+        name: "email-fraud-detection",
+        description:
+          "A robust system that scans your emails to identify fraudulent messages and phishing attempts, ensuring secure communication.",
+        language: "JavaScript",
+        stars: 45,
+        forks: 7,
+        status: "Public",
+        githubUrl: "https://github.com/Mursaleen7/email-fraud-detection", // Add the GitHub URL
+      },
+      {
+        title: "Computer Use (Public Beta)",
+        name: "computer-use-beta",
+        description:
+          "A groundbreaking feature enabling AI to control a computer's desktop environment. It mimics human interactions by moving the cursor, clicking buttons, typing text, and operating web browsers to automate tasks like form filling, booking trips, and planning events.",
+        language: "JavaScript",
+        stars: 38,
+        forks: 5,
+        status: "Public Beta",
+        githubUrl: "https://github.com/Mursaleen7/computer-use-beta", // Add the GitHub URL
+      },
+    ].map((project, index) => (
+      <div
+        key={index}
+        className="p-4 border border-github-border rounded-md hover:border-github-hover transition-colors animate-fade-in"
+      >
+        <div className="flex items-center justify-between mb-2">
+          <a
+            href={project.githubUrl} // Use the `a` tag and `href` attribute
+            target="_blank" // Open in a new tab
+            className="text-github-accent font-semibold hover:underline"
+          >
+            {project.title}
+          </a>
+          <span className="text-xs text-github-text-secondary border border-github-border rounded-full px-2 py-0.5">
+            {project.status}
+          </span>
+        </div>
+        <p className="text-sm text-github-text-secondary mb-4">
+          {project.description}
+        </p>
+        <div className="flex items-center space-x-4 text-xs text-github-text-secondary">
+          <div className="flex items-center">
+            <div className="w-3 h-3 rounded-full bg-yellow-400 mr-2"></div>
+            {project.language}
+          </div>
+          <div className="flex items-center">
+            <Star className="w-4 h-4 mr-1" />
+            {project.stars}
+          </div>
+          <div className="flex items-center">
+            <GitFork className="w-4 h-4 mr-1" />
+            {project.forks}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
 
             {/* Contributions Section */}
             <div className="mt-8 rounded-md border border-[#30363d] bg-[#0d1117] p-4">
