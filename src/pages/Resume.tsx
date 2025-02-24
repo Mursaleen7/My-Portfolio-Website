@@ -5,38 +5,57 @@ const Resume = () => {
   const resumeData = {
     experience: [
       {
-        role: "Senior Frontend Developer",
-        company: "Tech Solutions Inc.",
-        period: "2021 - Present",
-        description: "Led development of enterprise React applications and mentored junior developers.",
-        highlights: ["Improved app performance by 40%", "Implemented CI/CD pipelines", "Led team of 5 developers"],
+        role: "Software Tester and Co-ordinator (Co-op)",
+        company: "MVerse Technology Solutions",
+        period: "June 2024 - Sept 2024",
+        description: "Managed software testing processes, ensured product quality through rigorous test cases, and coordinated between development and QA teams.",
+        highlights: ["Designed, developed, and maintained automated test scripts using Selenium and PyTest, reducing manual testing time by 50% while increasing test coverage and efficiency.",
+        "Performed end-to-end testing of AI/ML models, analyzing real-world edge cases, validating predictions, and ensuring model robustness in production environments.",
+        "Executed automated and manual regression testing across multiple environments, significantly reducing the occurrence of undetected bugs and minimizing system downtime.",
+        "Led the implementation of CI/CD pipelines for automated testing, integrating test suites with GitHub Actions and Jenkins to ensure early bug detection and fast deployment cycles.",
+        "Developed test strategies for complex machine learning workflows, evaluating model accuracy, precision, recall, and F1 scores to ensure optimal performance.",
+        "Identified and resolved critical software defects by conducting root cause analysis, collaborating with developers, and ensuring fixes were verified through automated test suites.",
+        "Coordinated testing efforts across cross-functional teams, streamlining communication between software engineers, data scientists, and QA analysts to ensure efficient issue resolution.",
+        "Documented detailed test plans, cases, and execution results, maintaining a centralized repository of test artifacts to track software quality over time.",
+        "Evaluated AI/ML models for bias, robustness, and fairness, ensuring compliance with ethical AI standards and mitigating potential risks in deployment.",
+        "Designed and executed performance and load testing scenarios, benchmarking API response times, and optimizing database queries to reduce latency and improve system scalability.",
+        "Conducted security testing to identify vulnerabilities in APIs, authentication mechanisms, and data pipelines, implementing fixes to strengthen overall security posture.",
+        "Provided mentorship and training to junior QA engineers, improving team-wide testing best practices and fostering a culture of quality assurance within the development team."],
+      },
+      {
+        role: "AI Developer",
+        company: "Band Baaja Baraat",
+        period: "June 2024 - Aug 2024",
+        description: "Developed and optimized an AI-powered chatbot, ensuring high accuracy, performance, and seamless user interactions.",
+        highlights: ["Engineered an AI chatbot using React, Node.js, and Dialogflow, achieving 85% NLP accuracy.",
+        "Optimized the backend with Python and Flask, reducing query resolution time to under 200ms.",
+        "Implemented real-time communication using Socket.io for seamless interactions.",
+        "Managed deployment, ensuring performance, scalability, and security best practices."],
       },
       {
         role: "Frontend Developer",
-        company: "Digital Innovators",
-        period: "2019 - 2021",
-        description: "Developed and maintained multiple React-based web applications.",
-        highlights: ["Reduced bundle size by 60%", "Implemented PWA features", "Integrated payment systems"],
+        company: "Grey-Box",
+        period: "June 2024 - Aug 2024",
+        description: "Developed and optimized responsive web applications, ensuring high performance, accessibility, and an exceptional user experience.",
+        highlights: ["Engineered dynamic user interfaces using React, Next.js, and TypeScript to deliver an intuitive experience.",
+        "Implemented responsive design principles and optimized web performance for fast load times and accessibility.",
+        "Collaborated with UX/UI designers to craft modern, user-friendly layouts and seamless interactions.",
+        "Ensured cross-browser compatibility and conducted comprehensive testing to maintain a robust frontend."],
       },
     ],
     education: [
       {
-        degree: "M.S. Computer Science",
-        school: "Tech University",
-        period: "2017 - 2019",
-        description: "Focus on Web Technologies and Distributed Systems",
-      },
-      {
-        degree: "B.S. Computer Science",
-        school: "State University",
-        period: "2013 - 2017",
-        description: "Dean's List, Web Development Club President",
+        degree: "B.S. Computer Science (Minor in Statistics)",
+        school: "Carleton University",
+        period: "2022 - 2026",
+        description: "Cam's Kids Foundation Ambassador",
       },
     ],
     skills: [
-      { category: "Frontend", items: ["React", "TypeScript", "Next.js", "Tailwind CSS"] },
-      { category: "Backend", items: ["Node.js", "Express", "PostgreSQL", "Redis"] },
-      { category: "Tools", items: ["Git", "Docker", "AWS", "Vercel"] },
+      { "category": "Frontend", "items": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js", "Angular"] },
+      { "category": "Backend", "items": ["Node.js", "Express", "Python", "Django", "Flask", "PostgreSQL", "Redis", "GraphQL"] },
+      { "category": "DevOps & Tools", "items": ["Git", "Docker", "AWS", "Vercel", "Kubernetes", "Jenkins", "CircleCI", "Terraform"] },
+      { "category": "Machine Learning", "items": ["Python", "TensorFlow", "PyTorch", "scikit-learn", "Keras", "Pandas", "NumPy", "Matplotlib", "Jupyter Notebook", "OpenCV"] }
     ],
   };
 
@@ -128,3 +147,4 @@ const Resume = () => {
 };
 
 export default Resume;
+
