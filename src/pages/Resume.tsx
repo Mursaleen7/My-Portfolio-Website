@@ -1,5 +1,5 @@
 
-import { Book, Briefcase, GraduationCap, Star, FileText } from "lucide-react";
+import { Book, Briefcase, GraduationCap, Star, FileText, Heart } from "lucide-react";
 
 const Resume = () => {
   const resumeData = {
@@ -142,6 +142,75 @@ const Resume = () => {
           </div>
         </div>
       </div>
+      {/* Footer */}
+      <footer className="mt-16 border-t border-github-border bg-github-bg-secondary">
+        <div className="max-w-[1280px] mx-auto px-4 py-8">
+          <div className="flex flex-col md:flex-row justify-between items-center text-xs text-github-text-secondary">
+            <ul className="flex flex-wrap justify-center md:justify-start space-x-4 mb-4 md:mb-0">
+              <li>© 2023 GitHub, Inc.</li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Terms
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Security
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Status
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Docs
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Contact GitHub
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  API
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Training
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  About
+                </a>
+              </li>
+            </ul>
+            <div className="flex items-center space-x-2">
+              <Heart className="w-4 h-4" />
+              <span>Made with love by the GitHub team</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
