@@ -1,7 +1,7 @@
-"use client"
-import React, { useMemo } from "react"
-import { useParams, Link } from "react-router-dom"
-import { Layout, ListFilter, Calendar, Clock, CheckSquare, Code, Cpu, Upload, Zap, CheckCircle2 } from "lucide-react"
+"use client";
+import React, { useMemo } from "react";
+import { useParams, Link } from "react-router-dom";
+import { Layout, ListFilter, Calendar, Clock, CheckSquare, Code, Cpu, Upload, Zap, CheckCircle2, Heart } from "lucide-react";
 
 // Tailwind CSS configuration
 const tailwindConfig = {
@@ -59,7 +59,183 @@ const tailwindConfig = {
     },
   },
   plugins: [],
-}
+};
+
+const ProjectDescription2: React.FC = React.memo(() => (
+  <div className="prose prose-sm max-w-none text-github-text-light dark:text-github-text">
+    <h2 className="text-2xl font-semibold mb-4">Fraud Email Detection: An Intelligent Anti-Fraud Solution</h2>
+
+    <p className="mb-4">
+      This project started as a small, personal initiative when I noticed a growing problem: fraudulent emails are increasingly
+      causing financial losses and data breaches for individuals and businesses. Many still rely on outdated spam filters or manual
+      screening, but by the time a scam is identified, the damage is often done.
+    </p>
+
+    <div className="bg-github-secondary-light dark:bg-github-secondary p-4 rounded-md my-6 border border-github-border-light dark:border-github-border">
+      <h3 className="text-lg font-semibold mb-3">Project Goals</h3>
+      <p className="mb-3">
+        Existing solutions often require expensive enterprise subscriptions, complex configurations, or specialized hardware—resources
+        that aren’t always available to small businesses and individual users. I wanted to build something that was:
+      </p>
+      <ul className="list-none pl-0 space-y-2">
+        <li className="flex items-center">
+          <CheckCircle2 className="w-4 h-4 text-github-success-light dark:text-github-success mr-2 flex-shrink-0" />
+          <span>Free to use</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle2 className="w-4 h-4 text-github-success-light dark:text-github-success mr-2 flex-shrink-0" />
+          <span>Lightweight and accessible on any device</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle2 className="w-4 h-4 text-github-success-light dark:text-github-success mr-2 flex-shrink-0" />
+          <span>Capable of running locally without relying on cloud servers</span>
+        </li>
+      </ul>
+    </div>
+
+    <h3 className="text-xl font-semibold mt-6 mb-3">How It Works</h3>
+    <p className="mb-4">
+      The system is designed to help users quickly detect fraudulent emails using advanced AI algorithms. The process is simple:
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+      <div className="p-4 bg-github-secondary-light dark:bg-github-secondary rounded-md border border-github-border-light dark:border-github-border">
+        <div className="flex items-center mb-3">
+          <Upload className="w-5 h-5 text-github-accent-light dark:text-github-accent mr-2" />
+          <h4 className="text-base font-semibold">Process Flow</h4>
+        </div>
+        <ol className="list-decimal pl-5 space-y-2">
+          <li>Forward or upload the suspicious email.</li>
+          <li>The system extracts content and metadata.</li>
+          <li>AI algorithms analyze the email for fraud indicators.</li>
+          <li>Receive an instant risk score and actionable recommendations.</li>
+        </ol>
+      </div>
+
+      <div className="p-4 bg-github-secondary-light dark:bg-github-secondary rounded-md border border-github-border-light dark:border-github-border">
+        <div className="flex items-center mb-3">
+          <Zap className="w-5 h-5 text-github-accent-light dark:text-github-accent mr-2" />
+          <h4 className="text-base font-semibold">Key Features</h4>
+        </div>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Real-time fraud detection – Quickly identifies phishing and scam emails.</li>
+          <li>Customizable filtering – Adjust sensitivity based on user needs.</li>
+          <li>Integration ready – Easily connects with popular email platforms.</li>
+          <li>User-friendly interface – Simplified dashboard for both tech-savvy and non-technical users.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 className="text-xl font-semibold mt-6 mb-3">Technical Details</h3>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+      <div className="p-4 bg-github-secondary-light dark:bg-github-secondary rounded-md border border-github-border-light dark:border-github-border">
+        <div className="flex items-center mb-3">
+          <Code className="w-5 h-5 text-github-accent-light dark:text-github-accent mr-2" />
+          <h4 className="text-base font-semibold">Development Stack</h4>
+        </div>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Backend: Flask (handles email submissions and model predictions)</li>
+          <li>Frontend: HTML, CSS (simple yet effective UI)</li>
+          <li>Programming Language: Python</li>
+          <li>Machine Learning Libraries: TensorFlow, Keras, scikit-learn</li>
+          <li>Data Storage: Local file system (ensures data privacy)</li>
+        </ul>
+      </div>
+
+      <div className="p-4 bg-github-secondary-light dark:bg-github-secondary rounded-md border border-github-border-light dark:border-github-border">
+        <div className="flex items-center mb-3">
+          <Cpu className="w-5 h-5 text-github-accent-light dark:text-github-accent mr-2" />
+          <h4 className="text-base font-semibold">Deep Learning Model</h4>
+        </div>
+        <h5 className="font-medium mb-2">Architecture:</h5>
+        <ul className="list-disc pl-5 space-y-2 mb-3">
+          <li>Embedding layer for text representation</li>
+          <li>Bidirectional LSTM layers for sequence analysis</li>
+          <li>Attention mechanism for key phrase extraction</li>
+          <li>Fully connected layers with ReLU activations</li>
+          <li>Softmax output layer for classification</li>
+        </ul>
+        <h5 className="font-medium mb-2">Accuracy:</h5>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Phishing: 98.5%</li>
+          <li>Scam: 97.2%</li>
+          <li>Spam: 96.0%</li>
+          <li>Legitimate: 99.0%</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 className="text-xl font-semibold mt-6 mb-3">Building & Testing the System</h3>
+    <p className="mb-3">
+      Since this project was built on a small scale, I didn’t have access to enterprise-level resources or high-performance servers.
+      Instead, I trained the models on a local machine using datasets collected from open-source email repositories and public phishing databases.
+    </p>
+    <p className="mb-3">
+      For testing, I collaborated with several small businesses and individual users who forwarded suspicious emails. Their feedback
+      was invaluable in refining the model and improving detection accuracy.
+    </p>
+    <p className="mb-3">
+      One notable case involved a small business that detected a sophisticated phishing attack early, preventing a potential data breach
+      and saving significant resources.
+    </p>
+
+    <h3 className="text-xl font-semibold mt-6 mb-3">Challenges & Solutions</h3>
+    <div className="space-y-4 mt-4">
+      <div className="p-4 bg-github-secondary-light dark:bg-github-secondary rounded-md border border-github-border-light dark:border-github-border">
+        <h4 className="font-semibold mb-2">1. Lack of High-Quality Data</h4>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>The biggest challenge was sourcing verified, diverse email datasets that reflect real-world fraudulent behavior.</li>
+          <li>
+            I addressed this by aggregating data from multiple public sources and employing data augmentation techniques.
+          </li>
+        </ul>
+      </div>
+
+      <div className="p-4 bg-github-secondary-light dark:bg-github-secondary rounded-md border border-github-border-light dark:border-github-border">
+        <h4 className="font-semibold mb-2">2. Handling High Volume</h4>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Processing large volumes of emails in real-time on limited hardware posed a significant challenge.</li>
+          <li>
+            I optimized the algorithms for speed and efficiency, ensuring prompt risk assessments without sacrificing accuracy.
+          </li>
+        </ul>
+      </div>
+
+      <div className="p-4 bg-github-secondary-light dark:bg-github-secondary rounded-md border border-github-border-light dark:border-github-border">
+        <h4 className="font-semibold mb-2">3. User Adoption & Accessibility</h4>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Many users are not comfortable with complex cybersecurity tools.</li>
+          <li>
+            I designed the interface to be intuitive with clear instructions, so anyone can use it without prior technical expertise.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 className="text-xl font-semibold mt-6 mb-3">Current Status & Future Plans</h3>
+    <p className="mb-3">
+      Right now, the system is in its early stages but fully functional. The next steps include:
+    </p>
+    <ul className="list-none pl-0 space-y-2 mb-4">
+      <li className="flex items-center">
+        <CheckCircle2 className="w-4 h-4 text-github-success-light dark:text-github-success mr-2 flex-shrink-0" />
+        <span>Integrating with major email providers for seamless usage</span>
+      </li>
+      <li className="flex items-center">
+        <CheckCircle2 className="w-4 h-4 text-github-success-light dark:text-github-success mr-2 flex-shrink-0" />
+        <span>Adding advanced filtering options for personalized protection</span>
+      </li>
+      <li className="flex items-center">
+        <CheckCircle2 className="w-4 h-4 text-github-success-light dark:text-github-success mr-2 flex-shrink-0" />
+        <span>Refining the model with more diverse email datasets</span>
+      </li>
+    </ul>
+    <p>
+      The goal isn’t to replace professional cybersecurity solutions but to offer an accessible first line of defense against fraudulent emails.
+    </p>
+  </div>
+))
 
 const ProjectDescription: React.FC = React.memo(() => (
   <div className="prose prose-sm max-w-none text-github-text-light dark:text-github-text">
@@ -238,20 +414,20 @@ const ProjectDescription: React.FC = React.memo(() => (
       gardeners who need instant feedback.
     </p>
   </div>
-))
+));
 
 interface Task {
-  id: number
-  title: string
-  status: string
-  assignee: string
-  description: string
-  dueDate: string
-  progress: string
+  id: number;
+  title: string;
+  status: string;
+  assignee: string;
+  description: string;
+  dueDate: string;
+  progress: string;
 }
 
 interface TaskItemProps {
-  task: Task
+  task: Task;
 }
 
 const TaskItem: React.FC<TaskItemProps> = React.memo(({ task }) => (
@@ -287,20 +463,20 @@ const TaskItem: React.FC<TaskItemProps> = React.memo(({ task }) => (
       </span>
     </div>
   </div>
-))
+));
 
 interface Project {
-  name: string
-  status: string
-  progress: number
-  dueDate: string
-  tasks: Task[]
-  views: string[]
+  name: string;
+  status: string;
+  progress: number;
+  dueDate: string;
+  tasks: Task[];
+  views: string[];
 }
 
 const ProjectDetail: React.FC = () => {
-  const { name } = useParams<{ name?: string }>()
-  const displayName = name ? name.replace(/-/g, " ") : "Plant Disease Detection AI"
+  const { name } = useParams<{ name?: string }>();
+  const displayName = name ? name.replace(/-/g, " ") : "Plant Disease Detection AI";
 
   const project: Project = useMemo(
     () => ({
@@ -327,20 +503,12 @@ const ProjectDetail: React.FC = () => {
           dueDate: "Oct 2024",
           progress: "90%",
         },
-        {
-          id: 3,
-          title: "Expand training dataset",
-          status: "In Progress",
-          assignee: "David Brown",
-          description: "Collecting and labeling additional plant disease images for model training",
-          dueDate: "Dec 2024",
-          progress: "40%",
-        },
+
       ],
       views: ["Board", "Table", "Timeline"],
     }),
     [displayName],
-  )
+  );
 
   return (
     <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-6 font-sans text-[14px] leading-[1.5] text-github-text-light dark:text-github-text bg-github-bg-light dark:bg-github-bg">
@@ -365,7 +533,11 @@ const ProjectDetail: React.FC = () => {
             ))}
           </div>
         </div>
-        <ProjectDescription />
+        {project.name === "Plant Health AI" ? (
+          <ProjectDescription />
+        ) : (
+          <ProjectDescription2 />
+        )}
         <div className="flex items-center space-x-4 text-[#57606a] dark:text-[#8b949e] mt-4 text-sm">
           <div className="flex items-center">
             <Calendar className="w-4 h-4 mr-2" />
@@ -413,9 +585,78 @@ const ProjectDetail: React.FC = () => {
           ))}
         </div>
       </div>
+      {/* Footer */}
+      <footer className="mt-16 border-t border-github-border bg-github-bg-secondary">
+        <div className="max-w-[1280px] mx-auto px-4 py-8">
+          <div className="flex flex-col md:flex-row justify-between items-center text-xs text-github-text-secondary">
+            <ul className="flex flex-wrap justify-center md:justify-start space-x-4 mb-4 md:mb-0">
+              <li>© 2023 GitHub, Inc.</li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Terms
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Security
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Status
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Docs
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Contact GitHub
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  API
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Training
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-github-accent hover:underline">
+                  About
+                </a>
+              </li>
+            </ul>
+            <div className="flex items-center space-x-2">
+              <Heart className="w-4 h-4" />
+              <span>Made with love by the GitHub team</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectDetail
+export default ProjectDetail;
 
