@@ -17,19 +17,7 @@ const Projects = () => {
       description: "Native mobile application for iOS and Android",
       progress: "Planning",
       updated: "Updated 1 week ago",
-    },
-    {
-      name: "Data Analytics Dashboard",
-      description: "Interactive dashboard for data visualization",
-      progress: "Completed",
-      updated: "Updated 2 weeks ago",
-    },
-    {
-      name: "Plant Health AI",
-      description: "Revolutionary AI solution for plant disease detection",
-      progress: "In progress",
-      updated: "Updated 2 hours ago",
-    },
+    }
   ];
 
   return (
