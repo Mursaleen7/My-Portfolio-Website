@@ -63,7 +63,7 @@ const tailwindConfig = {
 
 const ProjectDescription2: React.FC = React.memo(() => (
   <div className="prose prose-sm max-w-none text-github-text-light dark:text-github-text">
-    <h2 className="text-2xl font-semibold mb-4">Fraud Email Detection: An Intelligent Anti-Fraud Solution</h2>
+    <h2 className="text-2xl font-semibold mb-4">Email Spam/Fraud Detection: An Intelligent Anti-Fraud/Spam Solution</h2>
 
     <p className="mb-4">
       This project started as a small, personal initiative when I noticed a growing problem: fraudulent emails are increasingly
