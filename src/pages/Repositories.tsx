@@ -33,6 +33,16 @@ const Repositories = () => {
       forks: 23,
       updated: "Updated 5 days ago",
       url: "https://github.com/Mursaleen7/Email-Spam-Detection"
+    },
+    {
+      name: "ChefSync",
+      description: "Make a dietary plan for finding/making the best possible meal plans based of your food goals",
+      language: "SQL",
+      languageColor: "#f1e05a",
+      stars: 76,
+      forks: 23,
+      updated: "Updated 5 days ago",
+      url: "https://github.com/Mursaleen7/Chef-Sync"
     }
   ];
 
