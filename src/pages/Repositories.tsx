@@ -25,14 +25,14 @@ const Repositories = () => {
       url: "https://github.com/Mursaleen7/Portfolio-Website"
     },
     {
-      name: "Email Fraud Detection",
-      description: "Detects whether the email is malicious and gives a fraud score",
+      name: "Email Spam/Fraud Detection",
+      description: "Detects whether the email is a spam email",
       language: "Python",
       languageColor: "#f1e05a",
       stars: 76,
       forks: 23,
       updated: "Updated 5 days ago",
-      url: "https://github.com/Mursaleen7/Portfolio-Website"
+      url: "https://github.com/Mursaleen7/Email-Spam-Detection"
     }
   ];
 
