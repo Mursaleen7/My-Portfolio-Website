@@ -79,7 +79,7 @@ const Overview = () => {
     {[
       {
         title: "Plant Health AI",
-        name: "awesome-project",
+        name: "plant-health-project",
         description:
           "An AI-driven solution that detects plant diseases, providing actionable insights to help farmers and gardeners keep their crops healthy.",
         language: "Python",
@@ -89,15 +89,15 @@ const Overview = () => {
         githubUrl: "https://github.com/Mursaleen7/Plant-Disease-Detection-Website", // Add the GitHub URL
       },
       {
-        title: "Email Fraud Detection",
+        title: "Email Spam/Fraud Detection",
         name: "email-fraud-detection",
         description:
           "A robust system that scans your emails to identify fraudulent messages and phishing attempts, ensuring secure communication.",
-        language: "JavaScript",
+        language: "Python",
         stars: 45,
         forks: 7,
         status: "Public",
-        githubUrl: "https://github.com/Mursaleen7/email-fraud-detection", // Add the GitHub URL
+        githubUrl: "https://github.com/Mursaleen7/Email-Spam-Detection", // Add the GitHub URL
       },
       {
         title: "Computer Use (Public Beta)",
