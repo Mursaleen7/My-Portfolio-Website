@@ -13,7 +13,7 @@ const Projects = () => {
       "updated": "Updated 3 days ago"
     },
     {
-      name: "Fraud Email Detection AI",
+      name: "Email Spam/Fraud Detection",
       description: "Native mobile application for iOS and Android",
       progress: "Planning",
       updated: "Updated 1 week ago",
